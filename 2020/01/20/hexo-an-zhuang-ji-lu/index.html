@@ -10,8 +10,8 @@
 
 
 1. 安装Git2. 安装Node.js3. 安装hexo 全局安装利用 npm 命令即可安装。（在任意位置点击鼠标右键，选择Git bash）
-1npm install -g hexo
-">
+npm install -g hexo
+创">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -428,6 +428,15 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                工具
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -464,21 +473,30 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>使用hexo和github搭建自己的blog<br><img src="/2020/01/20/hexo%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/1.png" alt="logo"></p>
-<a id="more"></a>
+                <p>使用hexo和github搭建自己的blog<br><img src="/2020/01/20/hexo-an-zhuang-ji-lu/1.png" alt="logo"></p>
+<span id="more"></span>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="800" height="86" src="//music.163.com/outchain/player?type=2&id=409654891&auto=0&height=66"></iframe>
 
 <h4 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1. 安装Git"></a>1. 安装Git</h4><h4 id="2-安装Node-js"><a href="#2-安装Node-js" class="headerlink" title="2. 安装Node.js"></a>2. 安装Node.js</h4><h4 id="3-安装hexo-全局安装"><a href="#3-安装hexo-全局安装" class="headerlink" title="3. 安装hexo 全局安装"></a>3. 安装hexo 全局安装</h4><p>利用 npm 命令即可安装。（在任意位置点击鼠标右键，选择Git bash）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">npm install -g hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h4 id="创建-hexo-项目"><a href="#创建-hexo-项目" class="headerlink" title="创建 hexo 项目"></a>创建 hexo 项目</h4><p>在指定位置 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init hexo_blog（项目名）</span><br><span class="line">他会给你初始化好项目</span><br></pre></td></tr></table></figure>
-<h4 id="4本地查看"><a href="#4本地查看" class="headerlink" title="4本地查看"></a>4本地查看</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">hexo init hexo_blog（项目名）
+他会给你初始化好项目<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="4本地查看"><a href="#4本地查看" class="headerlink" title="4本地查看"></a>4本地查看</h4><pre class="line-numbers language-none"><code class="language-none">hexo generate
+hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>到此本地博客就可以进行查看。<br>如果安装中出现问题：百度一下马上知道1</p>
-<h4 id="5-部署到github"><a href="#5-部署到github" class="headerlink" title="5 部署到github"></a>5 部署到github</h4><p>需要注册一个github账号，并创建一个仓库。eg:puxiaoshuai.github.io<br>注意格式。<br>更多内容参考：<a href="http://wuxiaolong.me/2015/07/31/build-blog-by-hexo/" target="_blank" rel="noopener">吴小龙hexo</a></p>
-<h4 id="6-Hexo-yilia-主题"><a href="#6-Hexo-yilia-主题" class="headerlink" title="6 Hexo yilia 主题"></a>6 Hexo yilia 主题</h4><p><a href="https://blog.csdn.net/lynnbest/article/details/79845944" target="_blank" rel="noopener">Hexo yilia 主题一揽子使用方案</a><br><a href="https://www.bbsmax.com/A/kvJ3YyR7dg/" target="_blank" rel="noopener">yilia个性化自定义教程</a><br>界面上的tags:<br>在yilia的_config.yml下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  主页: &#x2F;</span><br><span class="line">  前端: &#x2F;tags&#x2F;前端</span><br><span class="line">  随笔: &#x2F;tags&#x2F;随笔</span><br></pre></td></tr></table></figure>
+<h4 id="5-部署到github"><a href="#5-部署到github" class="headerlink" title="5 部署到github"></a>5 部署到github</h4><p>需要注册一个github账号，并创建一个仓库。eg:puxiaoshuai.github.io<br>注意格式。<br>更多内容参考：<a target="_blank" rel="noopener" href="http://wuxiaolong.me/2015/07/31/build-blog-by-hexo/">吴小龙hexo</a></p>
+<h4 id="6-Hexo-yilia-主题"><a href="#6-Hexo-yilia-主题" class="headerlink" title="6 Hexo yilia 主题"></a>6 Hexo yilia 主题</h4><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lynnbest/article/details/79845944">Hexo yilia 主题一揽子使用方案</a><br><a target="_blank" rel="noopener" href="https://www.bbsmax.com/A/kvJ3YyR7dg/">yilia个性化自定义教程</a><br>界面上的tags:<br>在yilia的_config.yml下</p>
+<pre class="line-numbers language-none"><code class="language-none">menu:
+  主页: &#x2F;
+  前端: &#x2F;tags&#x2F;前端
+  随笔: &#x2F;tags&#x2F;随笔<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>新创的文章 hexo new 文章名</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: hexo安装记录</span><br><span class="line">date: 2020-01-20 13:50:34</span><br><span class="line">tags: </span><br><span class="line">- hexo</span><br><span class="line">- 前端</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">title: hexo安装记录
+date: 2020-01-20 13:50:34
+tags: 
+- hexo
+- 前端<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>就能进行tag的搜索与跳转<br>关于上传图片，我是先把图片上传到简书上，然后之后复制markdown的连接就可以展示图片。</p>
 
                 
@@ -486,56 +504,6 @@
             <hr/>
 
             
-
-    <div class="reprint" id="reprint-statement">
-        
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">蒲小帅</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="https://puxiaoshuai.github.io/2020/01/20/hexo-an-zhuang-ji-lu/">https://puxiaoshuai.github.io/2020/01/20/hexo-an-zhuang-ji-lu/</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">蒲小帅</a>
-                    !
-                </span>
-            </div>
-        
-    </div>
-
-    <script async defer>
-      document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
-        M.toast({html: toastHTML})
-      });
-
-      function navToReprintStatement() {
-        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
-      }
-    </script>
 
 
 
@@ -560,7 +528,7 @@
 <div id="article-share">
 
     
-    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <div class="social-share" data-sites="qq,qzone,wechat" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
     <script src="/libs/share/js/social-share.min.js"></script>
     
 
@@ -613,7 +581,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Markdown 是一种轻量级的「标记语言」，创始人为约翰·格鲁伯，用简洁的语法代替排版，目前被越来越多的知识工作者、写作爱好者、程序员或研究员广泛使用。其常用的标记符号不超过十个，相对于更为复杂的 HTML 标记语言来说，Markdown
+                            Markdown 是一种轻量级的「标记语言」
                         
                     </div>
                     <div class="publish-info">
@@ -622,8 +590,12 @@
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            蒲小帅
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    工具
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -667,8 +639,12 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            蒲小帅
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    工具
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -818,6 +794,51 @@
 
     <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="song"
+                   id="25721157"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='one'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
 
     <div class="container row center-align"
          style="margin-bottom: 15px !important;">
@@ -832,7 +853,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">10.3k</span>
+                        class="white-color">10.2k</span>
             
             
             
@@ -1075,14 +1096,6 @@ $(function () {
     
 
     <!-- 雪花特效 -->
-     
-        <script type="text/javascript">
-            // 只在桌面版网页启用特效
-            var windowWidth = $(window).width();
-            if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
-            }
-        </script>
     
 
     <!-- 鼠标星星特效 -->
